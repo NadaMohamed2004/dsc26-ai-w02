@@ -10,4 +10,5 @@ I used Claude (Anthropic) to draft `rawaj/audit.py`, `rawaj/metrics.py` and the 
 
 ## Function I wrote without AI
 
-<!-- TODO (write this yourself): pick one function (for example confusion_at or precision_recall_at), write it by hand without AI, and say why you chose it. -->
+
+I wrote the body of audit() myself (the checks for missing values, duplicates, constant columns, labels, timestamps and leakage). I chose it because it is the main function of the task and I wanted to understand how each check works. The helper functions it calls (_missing_mask, _parse_times, _numeric_view, _auc) were written with AI help.
